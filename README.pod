@@ -16,6 +16,12 @@ I<setusergroups> exits 111 if it cannot find a UNIX account named I<account>, if
 
 I<setusergroups> cannot be run by anyone other than root.
 
+=head1 INSTALL
+
+    $ autoreconf -i
+    $ ./configure
+    $ make && make install
+
 =head1 LICENSE
 
     The MIT License (MIT)
