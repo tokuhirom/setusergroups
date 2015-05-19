@@ -1,0 +1,45 @@
+=head1 NAME
+
+setusergroups - set uid/pid/supplementary groups
+
+=head1 SYNOPSIS
+
+    $ setusergroups account child
+
+=head1 DESCRIPTION
+
+I<account> is a single argument. I<child> consists of one or more arguments.
+
+I<setusergroups> sets its uid and gid to account's uid and gid, removing all supplementary groups. It then runs I<child>.
+
+I<setusergroups> exits 111 if it cannot find a UNIX account named I<account>, if it cannot setgid, if it cannot setuid, if it cannot initgroups, or if it cannot run child. Otherwise its exit code is the same as that of child.
+
+I<setusergroups> cannot be run by anyone other than root.
+
+=head1 LICENSE
+
+    The MIT License (MIT)
+    Copyright © 2015 Tokuhiro Matsuno, http://64p.org/ <tokuhirom@gmail.com>
+
+    Permission is hereby granted, free of charge, to any person obtaining a copy
+    of this software and associated documentation files (the “Software”), to deal
+    in the Software without restriction, including without limitation the rights
+    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    copies of the Software, and to permit persons to whom the Software is
+    furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in
+    all copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+    THE SOFTWARE.
+
+=head1 SEE ALSO
+
+This C program is port of L<https://gist.github.com/kazuho/6181648>.
+
