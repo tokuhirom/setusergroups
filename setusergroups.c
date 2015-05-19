@@ -46,6 +46,8 @@ static void set_supp_groups(const char* username) {
     perror("setgroups failed");
     exit(1);
   }
+
+  free(gidset);
 }
 
 int main(int argc, char** argv) {
