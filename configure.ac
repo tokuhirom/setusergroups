@@ -2,7 +2,7 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ([2.68])
-AC_INIT(setusergroups, 0.0.1, tokuhirom@gmail.com)
+AC_INIT(setusergroups, 1.0.0, tokuhirom@gmail.com)
 AM_INIT_AUTOMAKE
 AC_CONFIG_SRCDIR([setusergroups.c])
 AC_CONFIG_HEADER([config.h])
