@@ -20,7 +20,7 @@ int main(int argc, char** argv) {
   struct passwd *pwnam = getpwnam(account);
   if (pwnam == NULL) {
     if (errno == 0) {
-      printf("unknown user: %s\n", account);
+      fprintf(stderr, "unknown user: %s\n", account);
     } else {
       perror("getpwnam failed");
     }
