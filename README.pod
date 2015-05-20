@@ -22,6 +22,8 @@ setusergroups support for supplementary groups.
 
 =head1 INSTALL
 
+This tool uses autotools.
+
     $ ./configure
     $ make && make install
 
