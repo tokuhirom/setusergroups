@@ -16,6 +16,10 @@ I<setusergroups> exits 111 if it cannot find a UNIX account named I<account>, if
 
 I<setusergroups> cannot be run by anyone other than root.
 
+=head1 setuidgid vs setusergroups
+
+setusergroups support for supplementary groups.
+
 =head1 INSTALL
 
     $ ./configure
