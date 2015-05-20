@@ -132,8 +132,8 @@
 .rm #[ #] #H #V #F C
 .\" ========================================================================
 .\"
-.IX Title "IO::FILE=IO(0XBAF450) 1"
-.TH IO::FILE=IO(0XBAF450) 1 "2015-05-20" "perl v5.18.4" "User Contributed Perl Documentation"
+.IX Title "IO::FILE=IO(0X25AC450) 1"
+.TH IO::FILE=IO(0X25AC450) 1 "2015-05-20" "perl v5.18.4" "User Contributed Perl Documentation"
 .\" For nroff, turn off justification.  Always turn off hyphenation; it makes
 .\" way too many mistakes in technical documents.
 .if n .ad l
@@ -154,12 +154,21 @@ setusergroups \- set uid/pid/supplementary groups
 \&\fIsetusergroups\fR exits 111 if it cannot find a \s-1UNIX\s0 account named \fIaccount\fR, if it cannot setgid, if it cannot setuid, if it cannot initgroups, or if it cannot run child. Otherwise its exit code is the same as that of child.
 .PP
 \&\fIsetusergroups\fR cannot be run by anyone other than root.
+.SH "setuidgid vs setusergroups"
+.IX Header "setuidgid vs setusergroups"
+setusergroups support for supplementary groups.
 .SH "INSTALL"
 .IX Header "INSTALL"
-.Vb 3
-\&    $ autoreconf \-i
+.Vb 2
 \&    $ ./configure
 \&    $ make && make install
+.Ve
+.SH "INSTALL FROM REPOSITORY"
+.IX Header "INSTALL FROM REPOSITORY"
+I don't include auto generated files. You need to run \fIautoreconf\fR.
+.PP
+.Vb 1
+\&    $ autoreconf \-i
 .Ve
 .SH "LICENSE"
 .IX Header "LICENSE"
