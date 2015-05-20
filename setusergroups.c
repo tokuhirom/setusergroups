@@ -36,8 +36,8 @@ int main(int argc, char** argv) {
     return 111;
   }
 
-  if (execvp(argv[2], &(argv[2])) == -1) {
-    perror("exec failed");
-    return 111;
-  }
+  execvp(argv[2], &(argv[2]));
+
+  perror("exec failed");
+  return 111;
 }
