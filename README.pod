@@ -2,7 +2,7 @@
 
 =head1 NAME
 
-setusergroups - set uid/pid/supplementary groups
+setusergroups - set uid/gid/supplementary groups
 
 =head1 SYNOPSIS
 
