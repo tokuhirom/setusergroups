@@ -3,4 +3,4 @@ sudo: false
 before_install:
   - autoconf --version
   - autoreconf -i
-install: ./configure && make
+script: ./configure && make
