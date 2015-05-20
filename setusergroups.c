@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <errno.h>
 
 #include <unistd.h>
 #include <sys/types.h>
@@ -15,9 +16,14 @@ int main(int argc, char** argv) {
 
   char* account = argv[1];
 
+  errno = 0;
   struct passwd *pwnam = getpwnam(account);
   if (pwnam == NULL) {
-    perror("unknown user");
+    if (errno == 0) {
+      printf("unknown user: %s\n", account);
+    } else {
+      perror("getpwnam failed");
+    }
     return 111;
   }
 
