@@ -4,9 +4,7 @@
 /missing
 /install-sh
 /depcomp
-/configure
 /INSTALL
-/Makefile.in
 /aclocal.m4
 /config.h.in
 /.deps/

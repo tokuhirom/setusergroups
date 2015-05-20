@@ -29,12 +29,6 @@ This tool uses autotools.
     $ ./configure
     $ make && make install
 
-=head1 INSTALL FROM REPOSITORY
-
-I don't include auto generated files. You need to run I<autoreconf>.
-
-    $ autoreconf -i
-
 =head1 LICENSE
 
     The MIT License (MIT)
