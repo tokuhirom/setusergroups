@@ -1,6 +1,4 @@
-=for HTML
-
-<a href="https://travis-ci.org/tokuhirom/setusergroups"><img src="https://travis-ci.org/tokuhirom/setusergroups.svg?branch=master"></a>
+=for HTML <a href="https://travis-ci.org/tokuhirom/setusergroups"><img src="https://travis-ci.org/tokuhirom/setusergroups.svg?branch=master"></a>
 
 =head1 NAME
 
